@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77688D27-C690-40A8-975C-6CFF90FC2599}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Abarrotes.My.MyApplication</StartupObject>
+    <RootNamespace>Abarrotes</RootNamespace>
+    <AssemblyName>Abarrotes</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Abarrotes.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Abarrotes.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\ClienteConsultar.Designer.vb">
+      <DependentUpon>ClienteConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ClienteConsultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\ClienteEditar.Designer.vb">
+      <DependentUpon>ClienteEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ClienteEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\ClienteEliminar.Designer.vb">
+      <DependentUpon>ClienteEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ClienteEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\ClienteNuevo.Designer.vb">
+      <DependentUpon>ClienteNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ClienteNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoEditar.Designer.vb">
+      <DependentUpon>DepartamentoEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoEliminar.Designer.vb">
+      <DependentUpon>DepartamentoEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoNuevo.Designer.vb">
+      <DependentUpon>DepartamentoNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio_caja.Designer.vb">
+      <DependentUpon>Inicio_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Merma.Designer.vb">
+      <DependentUpon>Merma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Merma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Producto\ProductoConsultar.Designer.vb">
+      <DependentUpon>ProductoConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\ProductoConsultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\ProductoEditar.Designer.vb">
+      <DependentUpon>ProductoEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\ProductoEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\ProductoEliminar.Designer.vb">
+      <DependentUpon>ProductoEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\ProductoEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\ProductoNuevo.Designer.vb">
+      <DependentUpon>ProductoNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\ProductoNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\ProductoSurtir.Designer.vb">
+      <DependentUpon>ProductoSurtir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\ProductoSurtir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorConsultar.Designer.vb">
+      <DependentUpon>ProveedorConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorConsultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorEditar.Designer.vb">
+      <DependentUpon>ProveedorEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorEliminar.Designer.vb">
+      <DependentUpon>ProveedorEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorNuevo.Designer.vb">
+      <DependentUpon>ProveedorNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\ProveedorNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\UsuarioConsultar.Designer.vb">
+      <DependentUpon>UsuarioConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\UsuarioConsultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\UsuarioEliminar.Designer.vb">
+      <DependentUpon>UsuarioEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\UsuarioEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\UsuarioNuevo.Designer.vb">
+      <DependentUpon>UsuarioNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\UsuarioNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\UsuarioEditar.Designer.vb">
+      <DependentUpon>UsuarioEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\UsuarioEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Cobrar.Designer.vb">
+      <DependentUpon>Cobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Cobrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupCambio.Designer.vb">
+      <DependentUpon>PopupCambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupCambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupConsutaArticulo.Designer.vb">
+      <DependentUpon>PopupConsutaArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupConsutaArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupFondoNegro.Designer.vb">
+      <DependentUpon>PopupFondoNegro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupFondoNegro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupOpciones.Designer.vb">
+      <DependentUpon>PopupOpciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupOpciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupTicket.Designer.vb">
+      <DependentUpon>PopupTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\PuntoVenta.Designer.vb">
+      <DependentUpon>PuntoVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\PuntoVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VentasMomento.Designer.vb">
+      <DependentUpon>VentasMomento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VentasMomento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cliente\ClienteConsultar.resx">
+      <DependentUpon>ClienteConsultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\ClienteEditar.resx">
+      <DependentUpon>ClienteEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\ClienteEliminar.resx">
+      <DependentUpon>ClienteEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\ClienteNuevo.resx">
+      <DependentUpon>ClienteNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\DepartamentoEditar.resx">
+      <DependentUpon>DepartamentoEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\DepartamentoEliminar.resx">
+      <DependentUpon>DepartamentoEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\DepartamentoNuevo.resx">
+      <DependentUpon>DepartamentoNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio_caja.resx">
+      <DependentUpon>Inicio_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Cobrar.resx">
+      <DependentUpon>Cobrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Merma.resx">
+      <DependentUpon>Merma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\ProductoConsultar.resx">
+      <DependentUpon>ProductoConsultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\ProductoEditar.resx">
+      <DependentUpon>ProductoEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\ProductoEliminar.resx">
+      <DependentUpon>ProductoEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\ProductoNuevo.resx">
+      <DependentUpon>ProductoNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\ProductoSurtir.resx">
+      <DependentUpon>ProductoSurtir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\ProveedorConsultar.resx">
+      <DependentUpon>ProveedorConsultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\ProveedorEditar.resx">
+      <DependentUpon>ProveedorEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\ProveedorEliminar.resx">
+      <DependentUpon>ProveedorEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\ProveedorNuevo.resx">
+      <DependentUpon>ProveedorNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\UsuarioConsultar.resx">
+      <DependentUpon>UsuarioConsultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\UsuarioEliminar.resx">
+      <DependentUpon>UsuarioEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\UsuarioNuevo.resx">
+      <DependentUpon>UsuarioNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\UsuarioEditar.resx">
+      <DependentUpon>UsuarioEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupCambio.resx">
+      <DependentUpon>PopupCambio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupConsutaArticulo.resx">
+      <DependentUpon>PopupConsutaArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupFondoNegro.resx">
+      <DependentUpon>PopupFondoNegro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupOpciones.resx">
+      <DependentUpon>PopupOpciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupTicket.resx">
+      <DependentUpon>PopupTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\PuntoVenta.resx">
+      <DependentUpon>PuntoVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VentasMomento.resx">
+      <DependentUpon>VentasMomento.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-icon-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodigoBarra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
