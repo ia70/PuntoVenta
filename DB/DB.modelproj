@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{1251afe7-7851-4430-a33c-c9c3ce5da846}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>DB</Name>
     <RootNamespace>DB</RootNamespace>
@@ -23,6 +23,13 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="DataBase.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataBase.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataBase.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\DB.uml">
       <SubType>Content</SubType>
     </Content>
