@@ -140,6 +140,12 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Venta\CorteCaja.Designer.vb">
+      <DependentUpon>CorteCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\CorteCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Merma.Designer.vb">
       <DependentUpon>Merma.vb</DependentUpon>
     </Compile>
@@ -251,16 +257,34 @@
     <Compile Include="Venta\Popup\PopupCambio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Venta\Popup\PopupCerrarSesion.Designer.vb">
+      <DependentUpon>PopupCerrarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupCerrarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Popup\PopupConsutaArticulo.Designer.vb">
       <DependentUpon>PopupConsutaArticulo.vb</DependentUpon>
     </Compile>
     <Compile Include="Venta\Popup\PopupConsutaArticulo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Venta\Popup\PopupEgresoEfectivo.Designer.vb">
+      <DependentUpon>PopupEgresoEfectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupEgresoEfectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Popup\PopupFondoNegro.Designer.vb">
       <DependentUpon>PopupFondoNegro.vb</DependentUpon>
     </Compile>
     <Compile Include="Venta\Popup\PopupFondoNegro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupIngresoEfectivo.Designer.vb">
+      <DependentUpon>PopupIngresoEfectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Popup\PopupIngresoEfectivo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Venta\Popup\PopupOpciones.Designer.vb">
@@ -319,6 +343,9 @@
     <EmbeddedResource Include="Venta\Cobrar.resx">
       <DependentUpon>Cobrar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta\CorteCaja.resx">
+      <DependentUpon>CorteCaja.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Venta\Merma.resx">
       <DependentUpon>Merma.vb</DependentUpon>
     </EmbeddedResource>
@@ -370,11 +397,20 @@
     <EmbeddedResource Include="Venta\Popup\PopupCambio.resx">
       <DependentUpon>PopupCambio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupCerrarSesion.resx">
+      <DependentUpon>PopupCerrarSesion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Venta\Popup\PopupConsutaArticulo.resx">
       <DependentUpon>PopupConsutaArticulo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupEgresoEfectivo.resx">
+      <DependentUpon>PopupEgresoEfectivo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Venta\Popup\PopupFondoNegro.resx">
       <DependentUpon>PopupFondoNegro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Popup\PopupIngresoEfectivo.resx">
+      <DependentUpon>PopupIngresoEfectivo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Venta\Popup\PopupOpciones.resx">
       <DependentUpon>PopupOpciones.vb</DependentUpon>

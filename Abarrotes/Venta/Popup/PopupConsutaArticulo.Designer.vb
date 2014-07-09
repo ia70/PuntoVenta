@@ -26,10 +26,10 @@ Partial Class PopupConsutaArticulo
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -78,13 +78,14 @@ Partial Class PopupConsutaArticulo
         Me.GroupBox1.Text = "Detalles"
         Me.GroupBox1.Visible = False
         '
-        'Label2
+        'Label4
         '
-        Me.Label2.Location = New System.Drawing.Point(35, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(394, 26)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "*"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(142, 89)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(18, 24)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "*"
         '
         'Label3
         '
@@ -95,26 +96,26 @@ Partial Class PopupConsutaArticulo
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Precio : $"
         '
-        'Label4
+        'Label2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(142, 89)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(18, 24)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "*"
+        Me.Label2.Location = New System.Drawing.Point(35, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(394, 26)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "*"
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(443, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(27, 25)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(462, 12)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(31, 32)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "X"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'PopupConsutaArticulo
         '
@@ -123,13 +124,13 @@ Partial Class PopupConsutaArticulo
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.Orange
-        Me.ClientSize = New System.Drawing.Size(474, 69)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(505, 69)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PopupConsutaArticulo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consultar articulo"
@@ -147,5 +148,5 @@ Partial Class PopupConsutaArticulo
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

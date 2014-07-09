@@ -26,10 +26,17 @@ Partial Class PuntoVenta
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -38,6 +45,7 @@ Partial Class PuntoVenta
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -48,6 +56,7 @@ Partial Class PuntoVenta
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Tabla = New System.Windows.Forms.DataGridView()
         Me.No = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CodigoBarra = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -55,26 +64,19 @@ Partial Class PuntoVenta
         Me.PrecioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        CType(Me.Tabla, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tabla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -86,7 +88,7 @@ Partial Class PuntoVenta
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel1.Size = New System.Drawing.Size(957, 143)
+        Me.Panel1.Size = New System.Drawing.Size(959, 143)
         Me.Panel1.TabIndex = 0
         '
         'Label14
@@ -96,7 +98,7 @@ Partial Class PuntoVenta
         Me.Label14.Font = New System.Drawing.Font("Ravie", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(130, 10)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(532, 123)
+        Me.Label14.Size = New System.Drawing.Size(534, 123)
         Me.Label14.TabIndex = 5
         Me.Label14.Text = "Abarrotes y fruteria PECOFAM"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -111,10 +113,50 @@ Partial Class PuntoVenta
         Me.Panel6.Controls.Add(Me.Label2)
         Me.Panel6.Controls.Add(Me.Label3)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel6.Location = New System.Drawing.Point(662, 10)
+        Me.Panel6.Location = New System.Drawing.Point(664, 10)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(285, 123)
         Me.Panel6.TabIndex = 4
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = Global.Abarrotes.My.Resources.Resources.User_1
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button6.Location = New System.Drawing.Point(25, 6)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(50, 50)
+        Me.Button6.TabIndex = 7
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.BackgroundImage = Global.Abarrotes.My.Resources.Resources.Key_1
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Location = New System.Drawing.Point(87, 6)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(50, 50)
+        Me.Button5.TabIndex = 5
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.Abarrotes.My.Resources.Resources.Tools_1
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.Location = New System.Drawing.Point(149, 6)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(50, 50)
+        Me.Button3.TabIndex = 4
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.Location = New System.Drawing.Point(210, 6)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(50, 50)
+        Me.Button2.TabIndex = 3
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -136,8 +178,23 @@ Partial Class PuntoVenta
         Me.Label3.Text = "Daniel Pérez Cortéz"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Padding = New System.Windows.Forms.Padding(5)
+        Me.PictureBox1.Size = New System.Drawing.Size(120, 123)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Label16)
+        Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.GroupBox2)
         Me.Panel2.Controls.Add(Me.GroupBox1)
         Me.Panel2.Controls.Add(Me.Label9)
@@ -146,7 +203,7 @@ Partial Class PuntoVenta
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 428)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(957, 134)
+        Me.Panel2.Size = New System.Drawing.Size(959, 134)
         Me.Panel2.TabIndex = 1
         '
         'GroupBox2
@@ -164,6 +221,27 @@ Partial Class PuntoVenta
         Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Captura de articulo :"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"(Kg)   Kilogramos", "(g)     Gramos", "(Pza)  Pieza ", "(L)      Litro ", "(ml)   Miliitros"})
+        Me.ComboBox1.Location = New System.Drawing.Point(179, 59)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(125, 26)
+        Me.ComboBox1.TabIndex = 8
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.Abarrotes.My.Resources.Resources.CodigoBarra
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button7.Location = New System.Drawing.Point(267, 22)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(37, 28)
+        Me.Button7.TabIndex = 7
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -244,6 +322,16 @@ Partial Class PuntoVenta
         Me.Label10.TabIndex = 6
         Me.Label10.Text = "Total : $"
         '
+        'Button4
+        '
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.Location = New System.Drawing.Point(226, 17)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(78, 74)
+        Me.Button4.TabIndex = 6
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -272,7 +360,7 @@ Partial Class PuntoVenta
         Me.Panel5.Controls.Add(Me.Label6)
         Me.Panel5.Controls.Add(Me.Label5)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(659, 0)
+        Me.Panel5.Location = New System.Drawing.Point(661, 0)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(298, 134)
         Me.Panel5.TabIndex = 5
@@ -333,18 +421,31 @@ Partial Class PuntoVenta
         Me.Panel3.Location = New System.Drawing.Point(0, 143)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.Panel3.Size = New System.Drawing.Size(957, 285)
+        Me.Panel3.Size = New System.Drawing.Size(959, 285)
         Me.Panel3.TabIndex = 2
         '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.PictureBox2)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(642, 0)
+        Me.Panel4.Location = New System.Drawing.Point(644, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
         Me.Panel4.Size = New System.Drawing.Size(315, 285)
         Me.Panel4.TabIndex = 2
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(20, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(275, 285)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
         '
         'Tabla
         '
@@ -360,7 +461,7 @@ Partial Class PuntoVenta
         Me.Tabla.Name = "Tabla"
         Me.Tabla.ReadOnly = True
         Me.Tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Tabla.Size = New System.Drawing.Size(942, 285)
+        Me.Tabla.Size = New System.Drawing.Size(944, 285)
         Me.Tabla.TabIndex = 1
         '
         'No
@@ -405,108 +506,31 @@ Partial Class PuntoVenta
         Me.Subtotal.ReadOnly = True
         Me.Subtotal.Width = 90
         '
-        'PictureBox2
+        'Label15
         '
-        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(20, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(275, 285)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(664, 21)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(113, 32)
+        Me.Label15.TabIndex = 11
+        Me.Label15.Text = "Ticket :"
         '
-        'Button7
+        'Label16
         '
-        Me.Button7.BackgroundImage = Global.Abarrotes.My.Resources.Resources.CodigoBarra
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(267, 22)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(37, 28)
-        Me.Button7.TabIndex = 7
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(226, 17)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(78, 74)
-        Me.Button4.TabIndex = 6
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.BackgroundImage = Global.Abarrotes.My.Resources.Resources.User_1
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(25, 6)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(50, 50)
-        Me.Button6.TabIndex = 7
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.BackgroundImage = Global.Abarrotes.My.Resources.Resources.Key_1
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Location = New System.Drawing.Point(87, 6)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(50, 50)
-        Me.Button5.TabIndex = 5
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = Global.Abarrotes.My.Resources.Resources.Tools_1
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(149, 6)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 50)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(210, 6)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(50, 50)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(10, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Padding = New System.Windows.Forms.Padding(5)
-        Me.PictureBox1.Size = New System.Drawing.Size(120, 123)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"(Kg)   Kilogramos", "(g)     Gramos", "(Pza)  Pieza ", "(L)      Litro ", "(ml)   Miliitros"})
-        Me.ComboBox1.Location = New System.Drawing.Point(179, 59)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(125, 26)
-        Me.ComboBox1.TabIndex = 8
+        Me.Label16.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(662, 59)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(113, 29)
+        Me.Label16.TabIndex = 12
+        Me.Label16.Text = "*"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PuntoVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(957, 562)
+        Me.ClientSize = New System.Drawing.Size(959, 562)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -522,6 +546,7 @@ Partial Class PuntoVenta
         Me.Panel1.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -532,9 +557,8 @@ Partial Class PuntoVenta
         Me.Panel5.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        CType(Me.Tabla, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tabla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -579,4 +603,6 @@ Partial Class PuntoVenta
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class

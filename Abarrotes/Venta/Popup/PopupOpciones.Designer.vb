@@ -93,20 +93,22 @@ Partial Class PopupOpciones
         '
         'Button6
         '
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(519, 5)
+        Me.Button6.Location = New System.Drawing.Point(508, 12)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(27, 25)
+        Me.Button6.Size = New System.Drawing.Size(31, 32)
         Me.Button6.TabIndex = 6
         Me.Button6.Text = "X"
+        Me.Button6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button6.UseVisualStyleBackColor = True
         '
         'PopupOpciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Orange
         Me.ClientSize = New System.Drawing.Size(551, 166)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -117,7 +119,7 @@ Partial Class PopupOpciones
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PopupOpciones"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Opciones"

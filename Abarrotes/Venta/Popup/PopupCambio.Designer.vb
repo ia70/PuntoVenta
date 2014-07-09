@@ -52,14 +52,15 @@ Partial Class PopupCambio
         '
         'Button3
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(586, 12)
+        Me.Button3.Location = New System.Drawing.Point(582, 12)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 25)
+        Me.Button3.Size = New System.Drawing.Size(31, 32)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "X"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
