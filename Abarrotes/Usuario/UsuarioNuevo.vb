@@ -28,6 +28,7 @@
     End Sub
 
     Private Sub BCancelar_Click(sender As Object, e As EventArgs) Handles BCancelar.Click
-        P1.BackgroundImage = My.Resources.Error_4
+        Pic1.BackgroundImage = My.Resources.Error_4
+        FUsuarioCosultar(TUsuario.Text)
     End Sub
 End Class
