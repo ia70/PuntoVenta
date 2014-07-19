@@ -116,7 +116,6 @@
     <Compile Include="Cliente\ClienteNuevo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataBaseCenter.vb" />
     <Compile Include="DB.vb" />
     <Compile Include="Departamento\DepartamentoEditar.Designer.vb">
       <DependentUpon>DepartamentoEditar.vb</DependentUpon>
@@ -136,6 +135,7 @@
     <Compile Include="Departamento\DepartamentoNuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Funciones.vb" />
     <Compile Include="Inicio_caja.Designer.vb">
       <DependentUpon>Inicio_caja.vb</DependentUpon>
     </Compile>
