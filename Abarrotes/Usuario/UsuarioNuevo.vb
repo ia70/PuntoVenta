@@ -101,10 +101,8 @@
     Private Sub TNombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TNombre.KeyPress
         If e.KeyChar = Chr(13) And TNombre.TextLength > 2 Then
             TApellidos.Focus()
-        ElseIf Char.IsLetter(e.KeyChar) Or e.KeyChar = Chr(8) Or e.KeyChar = Chr(32) Then
-            e.Handled = False
         Else
-            e.Handled = True
+            e = Validar_Nombre(e, TNombre)
         End If
     End Sub
 
@@ -122,12 +120,10 @@
     End Sub
 
     Private Sub TApellidos_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TApellidos.KeyPress
-        If e.KeyChar = Chr(13) And TApellidos.TextLength > 2 Then
+        If e.KeyChar = Chr(13) And TNombre.TextLength > 2 Then
             TNacimiento.Focus()
-        ElseIf Char.IsLetter(e.KeyChar) Or e.KeyChar = Chr(8) Or e.KeyChar = Chr(32) Then
-            e.Handled = False
         Else
-            e.Handled = True
+            e = Validar_Nombre(e, TNombre)
         End If
     End Sub
 
