@@ -102,7 +102,7 @@
         If e.KeyChar = Chr(13) And TNombre.TextLength > 2 Then
             TApellidos.Focus()
         Else
-            e = Validar_Nombre(e, TNombre)
+            e = Validar_Nombre(e, TNombre.Text)
         End If
     End Sub
 
@@ -123,7 +123,7 @@
         If e.KeyChar = Chr(13) And TNombre.TextLength > 2 Then
             TNacimiento.Focus()
         Else
-            e = Validar_Nombre(e, TNombre)
+            e = Validar_Nombre(e, TApellidos.Text)
         End If
     End Sub
 
