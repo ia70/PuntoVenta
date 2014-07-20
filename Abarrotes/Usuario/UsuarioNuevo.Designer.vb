@@ -48,7 +48,7 @@ Partial Class UsuarioNuevo
         Me.Pic2 = New System.Windows.Forms.PictureBox()
         Me.Pic6 = New System.Windows.Forms.PictureBox()
         Me.Pic9 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TTelefono = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Eti2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -330,15 +330,15 @@ Partial Class UsuarioNuevo
         Me.Pic9.TabIndex = 31
         Me.Pic9.TabStop = False
         '
-        'TextBox1
+        'TTelefono
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(97, 160)
-        Me.TextBox1.MaxLength = 15
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.TextBox1.Size = New System.Drawing.Size(128, 26)
-        Me.TextBox1.TabIndex = 30
+        Me.TTelefono.Enabled = False
+        Me.TTelefono.Location = New System.Drawing.Point(97, 160)
+        Me.TTelefono.MaxLength = 15
+        Me.TTelefono.Name = "TTelefono"
+        Me.TTelefono.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.TTelefono.Size = New System.Drawing.Size(128, 26)
+        Me.TTelefono.TabIndex = 30
         '
         'Label10
         '
@@ -457,7 +457,7 @@ Partial Class UsuarioNuevo
         Me.Panel4.Controls.Add(Me.Pic9)
         Me.Panel4.Controls.Add(Me.BGuardar)
         Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.TextBox1)
+        Me.Panel4.Controls.Add(Me.TTelefono)
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.TSexo)
@@ -543,7 +543,7 @@ Partial Class UsuarioNuevo
     Friend WithEvents Pic8 As System.Windows.Forms.PictureBox
     Friend WithEvents Pic6 As System.Windows.Forms.PictureBox
     Friend WithEvents Pic9 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TTelefono As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Eti2 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel

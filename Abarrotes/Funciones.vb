@@ -31,4 +31,12 @@
 
         Return e
     End Function
+
+    'Validar_Numero
+    Function Validar_Numero(ByVal e As KeyPressEventArgs) As KeyPressEventArgs
+        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(8) Then
+            e.Handled = True
+        End If
+        Return e
+    End Function
 End Module

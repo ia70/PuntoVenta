@@ -1,5 +1,5 @@
 ﻿Public Class UsuarioNuevo
-
+    Private Validacion(9) As Boolean
     Private Sub BBorrar_Click(sender As Object, e As EventArgs) Handles BBorrar.Click
         'Campos de texto
         TUsuario.Text = ""
@@ -10,6 +10,7 @@
         TNacimiento.Text = ""
         TSexo.SelectedIndex = -1
         TDireccion.Text = ""
+        TTelefono.Text = ""
 
         ' Pictures de validacion 
         Pic1.BackgroundImage = Nothing
@@ -48,11 +49,13 @@
                 BBorrar.Enabled = True
                 Pic1.BackgroundImage = My.Resources.Select_2
                 Eti1.Visible = False
+                Validacion(1) = True
             Else
-                BBorrar.Enabled = False
+                BBorrar.Enabled = True
                 TPassword.Enabled = False
                 Pic1.BackgroundImage = My.Resources.Error_4
                 Eti1.Visible = True
+                Validacion(1) = False
             End If
             tabla.Dispose()
         Else
@@ -60,6 +63,7 @@
             Eti1.Visible = False
             TPassword.Enabled = False
             BBorrar.Enabled = False
+            Validacion(1) = False
         End If
     End Sub
 
@@ -78,14 +82,17 @@
             Pic2.BackgroundImage = Nothing
             Eti2.Visible = False
             TTipo.Enabled = False
+            Validacion(2) = False
         ElseIf TPassword.TextLength < 4 Then
             Pic2.BackgroundImage = My.Resources.Error_4
             Eti2.Visible = True
             TTipo.Enabled = False
+            Validacion(2) = False
         Else
             Pic2.BackgroundImage = My.Resources.Select_2
             Eti2.Visible = False
             TTipo.Enabled = True
+            Validacion(2) = True
         End If
     End Sub
 
@@ -93,6 +100,7 @@
         Pic3.BackgroundImage = My.Resources.Select_2
         TNombre.Enabled = True
         TNombre.Focus()
+        Validacion(3) = True
         If TTipo.SelectedIndex = -1 Then
             TNombre.Enabled = False
         End If
@@ -110,12 +118,15 @@
         If TNombre.TextLength > 2 Then
             Pic4.BackgroundImage = My.Resources.Select_2
             TApellidos.Enabled = True
+            Validacion(4) = True
         ElseIf TNombre.TextLength > 0 Then
             Pic4.BackgroundImage = My.Resources.Error_4
             TApellidos.Enabled = False
+            Validacion(4) = False
         Else
             Pic4.BackgroundImage = Nothing
             TApellidos.Enabled = False
+            Validacion(4) = False
         End If
     End Sub
 
@@ -131,12 +142,119 @@
         If TApellidos.TextLength > 2 Then
             Pic5.BackgroundImage = My.Resources.Select_2
             TNacimiento.Enabled = True
+            Validacion(5) = True
         ElseIf TApellidos.TextLength > 0 Then
             Pic5.BackgroundImage = My.Resources.Error_4
             TNacimiento.Enabled = False
+            Validacion(5) = False
         Else
             Pic5.BackgroundImage = Nothing
             TNacimiento.Enabled = False
+            Validacion(5) = False
         End If
     End Sub
+
+    Private Sub TNacimiento_ValueChanged(sender As Object, e As EventArgs) Handles TNacimiento.ValueChanged
+        If TApellidos.Enabled = True Then
+            Pic6.BackgroundImage = My.Resources.Select_2
+            TSexo.Enabled = True
+            TSexo.Focus()
+            Validacion(6) = True
+        End If
+    End Sub
+
+    Private Sub TSexo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TSexo.SelectedIndexChanged
+        If TNacimiento.Enabled = True Then
+            Pic7.BackgroundImage = My.Resources.Select_2
+            TDireccion.Enabled = True
+            TDireccion.Focus()
+            Validacion(7) = True
+        End If
+    End Sub
+
+    Private Sub TDireccion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TDireccion.KeyPress
+        If e.KeyChar = Chr(13) And TDireccion.TextLength > 5 Then
+            TTelefono.Focus()
+        End If
+    End Sub
+
+    Private Sub TDireccion_TextChanged(sender As Object, e As EventArgs) Handles TDireccion.TextChanged
+        If TDireccion.TextLength > 5 Then
+            Pic8.BackgroundImage = My.Resources.Select_2
+            TTelefono.Enabled = True
+            Validacion(8) = True
+        Else
+            Pic8.BackgroundImage = Nothing
+            TTelefono.Enabled = False
+            Validacion(8) = False
+        End If
+    End Sub
+
+    Private Sub TTelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TTelefono.KeyPress
+        If e.KeyChar = Chr(13) Then
+        Else
+            e = Validar_Numero(e)
+        End If
+    End Sub
+
+    Private Sub TTelefono_TextChanged(sender As Object, e As EventArgs) Handles TTelefono.TextChanged
+        If TTelefono.TextLength > 9 Then
+            Pic9.BackgroundImage = My.Resources.Select_2
+            BGuardar.Enabled = True
+            Validacion(9) = True
+        Else
+            Pic9.BackgroundImage = Nothing
+            BGuardar.Enabled = False
+            Validacion(9) = False
+        End If
+    End Sub
+
+    Private Sub BGuardar_Click(sender As Object, e As EventArgs) Handles BGuardar.Click
+        Dim Estado As Integer
+        Dim db As New DB
+        If ValidacionGeneral() Then
+            Estado = db.Ejecutar("insert into usuario (IdUsuario,Pass,tipo,Nombre,Apellidos,FechaNacimiento,Sexo,Direccion,Telefono,FechaRegistro) values('" & TUsuario.Text & "','" & TPassword.Text & "','" & TTipo.Text & "','" & TNombre.Text & "','" & TApellidos.Text & "','" & TNacimiento.Text & "','" & TSexo.Text & "','" & TDireccion.Text & "','" & TTelefono.Text & "','" & Date.Today.ToShortDateString & "');")
+            If Estado > 0 Then
+                MsgBox("Registro guardado correctamente!", vbInformation, "Informacion")
+                BBorrar.PerformClick()
+            Else
+                MsgBox("Error al intentar guardar registro!", vbCritical, "Informacion")
+            End If
+        End If
+    End Sub
+
+    Private Function ValidacionGeneral() As Boolean
+        Dim Resp As Boolean = True
+
+        If Not Validacion(1) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Usuario!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(2) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Contraseña!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(3) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Tipo!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(4) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Nombre!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(5) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Apellidos!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(6) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Fecha de Nacimiento!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(7) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Sexo!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(8) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Direccion!", vbExclamation, "Informacion")
+        ElseIf Not Validacion(9) Then
+            Resp = False
+            MsgBox("Llene correctamente el campo: Telefono!", vbExclamation, "Informacion")
+        End If
+
+        Return Resp
+    End Function
 End Class
