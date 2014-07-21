@@ -22,16 +22,16 @@ Partial Class UsuarioConsultar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.CUsuario = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Datos = New System.Windows.Forms.GroupBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TDireccion = New System.Windows.Forms.Label()
+        Me.TSexo = New System.Windows.Forms.Label()
+        Me.TNacimiento = New System.Windows.Forms.Label()
+        Me.TApellidos = New System.Windows.Forms.Label()
+        Me.TNombre = New System.Windows.Forms.Label()
+        Me.TTipo = New System.Windows.Forms.Label()
+        Me.TPassword = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
@@ -41,19 +41,22 @@ Partial Class UsuarioConsultar
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BCerrar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.TRegistro = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Datos.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ComboBox3
+        'CUsuario
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(136, 50)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(183, 26)
-        Me.ComboBox3.TabIndex = 64
+        Me.CUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CUsuario.FormattingEnabled = True
+        Me.CUsuario.Location = New System.Drawing.Point(136, 50)
+        Me.CUsuario.Name = "CUsuario"
+        Me.CUsuario.Size = New System.Drawing.Size(183, 26)
+        Me.CUsuario.TabIndex = 64
         '
         'Label7
         '
@@ -67,13 +70,15 @@ Partial Class UsuarioConsultar
         '
         'Datos
         '
-        Me.Datos.Controls.Add(Me.Label16)
-        Me.Datos.Controls.Add(Me.Label15)
-        Me.Datos.Controls.Add(Me.Label14)
-        Me.Datos.Controls.Add(Me.Label13)
-        Me.Datos.Controls.Add(Me.Label12)
+        Me.Datos.Controls.Add(Me.TRegistro)
         Me.Datos.Controls.Add(Me.Label11)
-        Me.Datos.Controls.Add(Me.Label10)
+        Me.Datos.Controls.Add(Me.TDireccion)
+        Me.Datos.Controls.Add(Me.TSexo)
+        Me.Datos.Controls.Add(Me.TNacimiento)
+        Me.Datos.Controls.Add(Me.TApellidos)
+        Me.Datos.Controls.Add(Me.TNombre)
+        Me.Datos.Controls.Add(Me.TTipo)
+        Me.Datos.Controls.Add(Me.TPassword)
         Me.Datos.Controls.Add(Me.Label9)
         Me.Datos.Controls.Add(Me.GroupBox2)
         Me.Datos.Controls.Add(Me.Label6)
@@ -90,75 +95,75 @@ Partial Class UsuarioConsultar
         Me.Datos.TabStop = False
         Me.Datos.Text = "Datos"
         '
-        'Label16
+        'TDireccion
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label16.Location = New System.Drawing.Point(120, 224)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(14, 18)
-        Me.Label16.TabIndex = 64
-        Me.Label16.Text = "*"
+        Me.TDireccion.AutoSize = True
+        Me.TDireccion.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TDireccion.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TDireccion.Location = New System.Drawing.Point(120, 224)
+        Me.TDireccion.Name = "TDireccion"
+        Me.TDireccion.Size = New System.Drawing.Size(0, 18)
+        Me.TDireccion.TabIndex = 64
         '
-        'Label15
+        'TSexo
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label15.Location = New System.Drawing.Point(120, 192)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(14, 18)
-        Me.Label15.TabIndex = 63
-        Me.Label15.Text = "*"
+        Me.TSexo.AutoSize = True
+        Me.TSexo.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSexo.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TSexo.Location = New System.Drawing.Point(120, 192)
+        Me.TSexo.Name = "TSexo"
+        Me.TSexo.Size = New System.Drawing.Size(0, 18)
+        Me.TSexo.TabIndex = 63
         '
-        'Label14
+        'TNacimiento
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label14.Location = New System.Drawing.Point(195, 158)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(14, 18)
-        Me.Label14.TabIndex = 62
-        Me.Label14.Text = "*"
+        Me.TNacimiento.AutoSize = True
+        Me.TNacimiento.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TNacimiento.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TNacimiento.Location = New System.Drawing.Point(195, 158)
+        Me.TNacimiento.Name = "TNacimiento"
+        Me.TNacimiento.Size = New System.Drawing.Size(0, 18)
+        Me.TNacimiento.TabIndex = 62
         '
-        'Label13
+        'TApellidos
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label13.Location = New System.Drawing.Point(120, 126)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(14, 18)
-        Me.Label13.TabIndex = 61
-        Me.Label13.Text = "*"
+        Me.TApellidos.AutoSize = True
+        Me.TApellidos.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TApellidos.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TApellidos.Location = New System.Drawing.Point(120, 126)
+        Me.TApellidos.Name = "TApellidos"
+        Me.TApellidos.Size = New System.Drawing.Size(0, 18)
+        Me.TApellidos.TabIndex = 61
         '
-        'Label12
+        'TNombre
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label12.Location = New System.Drawing.Point(120, 97)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(14, 18)
-        Me.Label12.TabIndex = 60
-        Me.Label12.Text = "*"
+        Me.TNombre.AutoSize = True
+        Me.TNombre.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TNombre.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TNombre.Location = New System.Drawing.Point(120, 97)
+        Me.TNombre.Name = "TNombre"
+        Me.TNombre.Size = New System.Drawing.Size(0, 18)
+        Me.TNombre.TabIndex = 60
         '
-        'Label11
+        'TTipo
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label11.Location = New System.Drawing.Point(120, 65)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(14, 18)
-        Me.Label11.TabIndex = 59
-        Me.Label11.Text = "*"
+        Me.TTipo.AutoSize = True
+        Me.TTipo.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTipo.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TTipo.Location = New System.Drawing.Point(120, 65)
+        Me.TTipo.Name = "TTipo"
+        Me.TTipo.Size = New System.Drawing.Size(0, 18)
+        Me.TTipo.TabIndex = 59
         '
-        'Label10
+        'TPassword
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label10.Location = New System.Drawing.Point(120, 33)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(14, 18)
-        Me.Label10.TabIndex = 58
-        Me.Label10.Text = "*"
+        Me.TPassword.AutoSize = True
+        Me.TPassword.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TPassword.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TPassword.Location = New System.Drawing.Point(120, 33)
+        Me.TPassword.Name = "TPassword"
+        Me.TPassword.Size = New System.Drawing.Size(0, 18)
+        Me.TPassword.TabIndex = 58
         '
         'Label9
         '
@@ -174,9 +179,9 @@ Partial Class UsuarioConsultar
         '
         Me.GroupBox2.Controls.Add(Me.CheckedListBox1)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(0, 258)
+        Me.GroupBox2.Location = New System.Drawing.Point(0, 277)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(353, 144)
+        Me.GroupBox2.Size = New System.Drawing.Size(353, 125)
         Me.GroupBox2.TabIndex = 54
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Permisos"
@@ -185,9 +190,9 @@ Partial Class UsuarioConsultar
         '
         Me.CheckedListBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(9, 25)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(10, 25)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(333, 109)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(333, 46)
         Me.CheckedListBox1.TabIndex = 0
         '
         'Label6
@@ -250,14 +255,14 @@ Partial Class UsuarioConsultar
         Me.Label1.TabIndex = 42
         Me.Label1.Text = "Contraseña :"
         '
-        'Button1
+        'BCerrar
         '
-        Me.Button1.Location = New System.Drawing.Point(332, 496)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 29)
-        Me.Button1.TabIndex = 60
-        Me.Button1.Text = "Cerrar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BCerrar.Location = New System.Drawing.Point(332, 496)
+        Me.BCerrar.Name = "BCerrar"
+        Me.BCerrar.Size = New System.Drawing.Size(93, 29)
+        Me.BCerrar.TabIndex = 60
+        Me.BCerrar.Text = "Cerrar"
+        Me.BCerrar.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -269,15 +274,35 @@ Partial Class UsuarioConsultar
         Me.Label8.TabIndex = 59
         Me.Label8.Text = "Consulta de usuario:"
         '
+        'TRegistro
+        '
+        Me.TRegistro.AutoSize = True
+        Me.TRegistro.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRegistro.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.TRegistro.Location = New System.Drawing.Point(159, 255)
+        Me.TRegistro.Name = "TRegistro"
+        Me.TRegistro.Size = New System.Drawing.Size(0, 18)
+        Me.TRegistro.TabIndex = 66
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(6, 255)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(152, 19)
+        Me.Label11.TabIndex = 65
+        Me.Label11.Text = "Fecha de registro :"
+        '
         'UsuarioConsultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(448, 537)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.CUsuario)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Datos)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BCerrar)
         Me.Controls.Add(Me.Label8)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -294,7 +319,7 @@ Partial Class UsuarioConsultar
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents CUsuario As System.Windows.Forms.ComboBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Datos As System.Windows.Forms.GroupBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
@@ -306,13 +331,15 @@ Partial Class UsuarioConsultar
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents BCerrar As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents TDireccion As System.Windows.Forms.Label
+    Friend WithEvents TSexo As System.Windows.Forms.Label
+    Friend WithEvents TNacimiento As System.Windows.Forms.Label
+    Friend WithEvents TApellidos As System.Windows.Forms.Label
+    Friend WithEvents TNombre As System.Windows.Forms.Label
+    Friend WithEvents TTipo As System.Windows.Forms.Label
+    Friend WithEvents TPassword As System.Windows.Forms.Label
+    Friend WithEvents TRegistro As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class
