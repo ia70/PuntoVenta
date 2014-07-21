@@ -22,40 +22,42 @@ Partial Class ProveedorEliminar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.BCancelar = New System.Windows.Forms.Button()
+        Me.BEliminar = New System.Windows.Forms.Button()
+        Me.CProveedor = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button2
+        'BCancelar
         '
-        Me.Button2.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Button2.Location = New System.Drawing.Point(156, 104)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(98, 28)
-        Me.Button2.TabIndex = 48
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BCancelar.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.BCancelar.Location = New System.Drawing.Point(156, 104)
+        Me.BCancelar.Name = "BCancelar"
+        Me.BCancelar.Size = New System.Drawing.Size(98, 28)
+        Me.BCancelar.TabIndex = 48
+        Me.BCancelar.Text = "Cancelar"
+        Me.BCancelar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'BEliminar
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(267, 104)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 28)
-        Me.Button1.TabIndex = 47
-        Me.Button1.Text = "Eliminar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BEliminar.Enabled = False
+        Me.BEliminar.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.BEliminar.Location = New System.Drawing.Point(267, 104)
+        Me.BEliminar.Name = "BEliminar"
+        Me.BEliminar.Size = New System.Drawing.Size(98, 28)
+        Me.BEliminar.TabIndex = 47
+        Me.BEliminar.Text = "Eliminar"
+        Me.BEliminar.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'CProveedor
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(139, 61)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(226, 26)
-        Me.ComboBox1.TabIndex = 45
+        Me.CProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CProveedor.FormattingEnabled = True
+        Me.CProveedor.Location = New System.Drawing.Point(139, 61)
+        Me.CProveedor.Name = "CProveedor"
+        Me.CProveedor.Size = New System.Drawing.Size(226, 26)
+        Me.CProveedor.TabIndex = 45
         '
         'Label5
         '
@@ -82,14 +84,14 @@ Partial Class ProveedorEliminar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(390, 146)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.BCancelar)
+        Me.Controls.Add(Me.BEliminar)
+        Me.Controls.Add(Me.CProveedor)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ProveedorEliminar"
@@ -99,9 +101,9 @@ Partial Class ProveedorEliminar
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents BCancelar As System.Windows.Forms.Button
+    Friend WithEvents BEliminar As System.Windows.Forms.Button
+    Friend WithEvents CProveedor As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
