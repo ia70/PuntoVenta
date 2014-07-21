@@ -1,5 +1,5 @@
 ﻿Public Class UsuarioEditar
-    Public Tabla As New DataTable
+    Private Tabla As New DataTable
     Private Validacion(9) As Boolean
 
     Private Sub UsuarioEditar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

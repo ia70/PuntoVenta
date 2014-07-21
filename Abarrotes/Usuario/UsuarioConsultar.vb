@@ -1,5 +1,5 @@
 ﻿Public Class UsuarioConsultar
-    Public Tabla As New DataTable
+    Private Tabla As New DataTable
     Private Sub UsuarioConsultar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim db As New DB
 
