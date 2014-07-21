@@ -139,7 +139,6 @@ Partial Class UsuarioNuevo
         '
         'TPassword
         '
-        Me.TPassword.Enabled = False
         Me.TPassword.Location = New System.Drawing.Point(113, 0)
         Me.TPassword.MaxLength = 15
         Me.TPassword.Name = "TPassword"
