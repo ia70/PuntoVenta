@@ -24,22 +24,24 @@ Partial Class ProveedorConsultar
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TCorreo = New System.Windows.Forms.Label()
+        Me.TTelefono = New System.Windows.Forms.Label()
+        Me.TNombre = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CProveedor = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TFechaRegistro = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(324, 254)
+        Me.Button1.Location = New System.Drawing.Point(337, 267)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 28)
         Me.Button1.TabIndex = 47
@@ -48,19 +50,51 @@ Partial Class ProveedorConsultar
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.TFechaRegistro)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.TCorreo)
+        Me.GroupBox1.Controls.Add(Me.TTelefono)
+        Me.GroupBox1.Controls.Add(Me.TNombre)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(31, 103)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(404, 136)
+        Me.GroupBox1.Size = New System.Drawing.Size(404, 158)
         Me.GroupBox1.TabIndex = 46
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos : "
+        '
+        'TCorreo
+        '
+        Me.TCorreo.AutoSize = True
+        Me.TCorreo.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TCorreo.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.TCorreo.Location = New System.Drawing.Point(164, 98)
+        Me.TCorreo.Name = "TCorreo"
+        Me.TCorreo.Size = New System.Drawing.Size(0, 18)
+        Me.TCorreo.TabIndex = 38
+        '
+        'TTelefono
+        '
+        Me.TTelefono.AutoSize = True
+        Me.TTelefono.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTelefono.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.TTelefono.Location = New System.Drawing.Point(93, 65)
+        Me.TTelefono.Name = "TTelefono"
+        Me.TTelefono.Size = New System.Drawing.Size(0, 18)
+        Me.TTelefono.TabIndex = 37
+        '
+        'TNombre
+        '
+        Me.TNombre.AutoSize = True
+        Me.TNombre.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TNombre.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.TNombre.Location = New System.Drawing.Point(93, 33)
+        Me.TNombre.Name = "TNombre"
+        Me.TNombre.Size = New System.Drawing.Size(0, 18)
+        Me.TNombre.TabIndex = 36
         '
         'Label4
         '
@@ -92,13 +126,14 @@ Partial Class ProveedorConsultar
         Me.Label2.TabIndex = 33
         Me.Label2.Text = "Nombre :"
         '
-        'ComboBox1
+        'CProveedor
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(139, 56)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(226, 26)
-        Me.ComboBox1.TabIndex = 45
+        Me.CProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CProveedor.FormattingEnabled = True
+        Me.CProveedor.Location = New System.Drawing.Point(139, 56)
+        Me.CProveedor.Name = "CProveedor"
+        Me.CProveedor.Size = New System.Drawing.Size(226, 26)
+        Me.CProveedor.TabIndex = 45
         '
         'Label5
         '
@@ -120,49 +155,39 @@ Partial Class ProveedorConsultar
         Me.Label1.TabIndex = 43
         Me.Label1.Text = "Editar proveedor :"
         '
-        'Label6
+        'TFechaRegistro
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(93, 33)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(14, 18)
-        Me.Label6.TabIndex = 36
-        Me.Label6.Text = "*"
+        Me.TFechaRegistro.AutoSize = True
+        Me.TFechaRegistro.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TFechaRegistro.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.TFechaRegistro.Location = New System.Drawing.Point(166, 129)
+        Me.TFechaRegistro.Name = "TFechaRegistro"
+        Me.TFechaRegistro.Size = New System.Drawing.Size(0, 18)
+        Me.TFechaRegistro.TabIndex = 40
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(93, 65)
+        Me.Label7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(6, 129)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(14, 18)
-        Me.Label7.TabIndex = 37
-        Me.Label7.Text = "*"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(164, 98)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(14, 18)
-        Me.Label8.TabIndex = 38
-        Me.Label8.Text = "*"
+        Me.Label7.Size = New System.Drawing.Size(158, 19)
+        Me.Label7.TabIndex = 39
+        Me.Label7.Text = "Fecha de Registro :"
         '
         'ProveedorConsultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(461, 294)
+        Me.ClientSize = New System.Drawing.Size(445, 306)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CProveedor)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ProveedorConsultar"
@@ -179,10 +204,12 @@ Partial Class ProveedorConsultar
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents CProveedor As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents TCorreo As System.Windows.Forms.Label
+    Friend WithEvents TTelefono As System.Windows.Forms.Label
+    Friend WithEvents TNombre As System.Windows.Forms.Label
+    Friend WithEvents TFechaRegistro As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class
