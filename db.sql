@@ -43,7 +43,7 @@ create table departamento(
 	IdDepartamento int auto_increment primary key comment 'Clave unica para cada departamento',
 	Nombre varchar(20) comment 'Nombre del departamento',
 	Descripcion varchar(100) comment 'Descripcion del departamento',
-	FechaRegistro date comment 'Fecha en que se registra el departamento'
+	FechaRegistro varchar(11) comment 'Fecha en que se registra el departamento'
 );
 
 create table efectivoegreso(

@@ -24,9 +24,13 @@ Partial Class DepartamentoNuevo
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TDepartamento = New System.Windows.Forms.TextBox()
+        Me.BGuardar = New System.Windows.Forms.Button()
+        Me.BCancelar = New System.Windows.Forms.Button()
+        Me.Pic1 = New System.Windows.Forms.PictureBox()
+        Me.TDescripcion = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        CType(Me.Pic1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,56 +52,90 @@ Partial Class DepartamentoNuevo
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre del departamento :"
         '
-        'TextBox1
+        'TDepartamento
         '
-        Me.TextBox1.Location = New System.Drawing.Point(234, 64)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(212, 26)
-        Me.TextBox1.TabIndex = 2
+        Me.TDepartamento.Location = New System.Drawing.Point(234, 64)
+        Me.TDepartamento.Name = "TDepartamento"
+        Me.TDepartamento.Size = New System.Drawing.Size(179, 26)
+        Me.TDepartamento.TabIndex = 2
         '
-        'Button1
+        'BGuardar
         '
-        Me.Button1.Location = New System.Drawing.Point(355, 114)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 27)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BGuardar.Location = New System.Drawing.Point(354, 170)
+        Me.BGuardar.Name = "BGuardar"
+        Me.BGuardar.Size = New System.Drawing.Size(90, 27)
+        Me.BGuardar.TabIndex = 3
+        Me.BGuardar.Text = "Guardar"
+        Me.BGuardar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BCancelar
         '
-        Me.Button2.Location = New System.Drawing.Point(247, 114)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(90, 27)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BCancelar.Location = New System.Drawing.Point(246, 170)
+        Me.BCancelar.Name = "BCancelar"
+        Me.BCancelar.Size = New System.Drawing.Size(90, 27)
+        Me.BCancelar.TabIndex = 4
+        Me.BCancelar.Text = "Cancelar"
+        Me.BCancelar.UseVisualStyleBackColor = True
+        '
+        'Pic1
+        '
+        Me.Pic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Pic1.Location = New System.Drawing.Point(419, 64)
+        Me.Pic1.Name = "Pic1"
+        Me.Pic1.Size = New System.Drawing.Size(25, 25)
+        Me.Pic1.TabIndex = 5
+        Me.Pic1.TabStop = False
+        '
+        'TDescripcion
+        '
+        Me.TDescripcion.Location = New System.Drawing.Point(136, 99)
+        Me.TDescripcion.MaxLength = 250
+        Me.TDescripcion.Multiline = True
+        Me.TDescripcion.Name = "TDescripcion"
+        Me.TDescripcion.Size = New System.Drawing.Size(308, 59)
+        Me.TDescripcion.TabIndex = 7
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(30, 99)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(100, 18)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Descripción :"
         '
         'DepartamentoNuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 157)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(460, 204)
+        Me.Controls.Add(Me.TDescripcion)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Pic1)
+        Me.Controls.Add(Me.BCancelar)
+        Me.Controls.Add(Me.BGuardar)
+        Me.Controls.Add(Me.TDepartamento)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DepartamentoNuevo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo departamento"
+        CType(Me.Pic1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TDepartamento As System.Windows.Forms.TextBox
+    Friend WithEvents BGuardar As System.Windows.Forms.Button
+    Friend WithEvents BCancelar As System.Windows.Forms.Button
+    Friend WithEvents Pic1 As System.Windows.Forms.PictureBox
+    Friend WithEvents TDescripcion As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
