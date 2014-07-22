@@ -117,6 +117,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DB.vb" />
+    <Compile Include="Departamento\DepartamentoConsultar.Designer.vb">
+      <DependentUpon>DepartamentoConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\DepartamentoConsultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Departamento\DepartamentoEditar.Designer.vb">
       <DependentUpon>DepartamentoEditar.vb</DependentUpon>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente\ClienteNuevo.resx">
       <DependentUpon>ClienteNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\DepartamentoConsultar.resx">
+      <DependentUpon>DepartamentoConsultar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Departamento\DepartamentoEditar.resx">
       <DependentUpon>DepartamentoEditar.vb</DependentUpon>
