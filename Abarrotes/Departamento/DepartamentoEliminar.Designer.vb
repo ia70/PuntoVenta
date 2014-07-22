@@ -22,38 +22,40 @@ Partial Class DepartamentoEliminar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CDepartamento = New System.Windows.Forms.ComboBox()
+        Me.BCancelar = New System.Windows.Forms.Button()
+        Me.BEliminar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'CDepartamento
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(155, 64)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(245, 26)
-        Me.ComboBox1.TabIndex = 17
+        Me.CDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CDepartamento.FormattingEnabled = True
+        Me.CDepartamento.Location = New System.Drawing.Point(155, 64)
+        Me.CDepartamento.Name = "CDepartamento"
+        Me.CDepartamento.Size = New System.Drawing.Size(245, 26)
+        Me.CDepartamento.TabIndex = 17
         '
-        'Button2
+        'BCancelar
         '
-        Me.Button2.Location = New System.Drawing.Point(202, 122)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(90, 27)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BCancelar.Location = New System.Drawing.Point(202, 122)
+        Me.BCancelar.Name = "BCancelar"
+        Me.BCancelar.Size = New System.Drawing.Size(90, 27)
+        Me.BCancelar.TabIndex = 16
+        Me.BCancelar.Text = "Cancelar"
+        Me.BCancelar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'BEliminar
         '
-        Me.Button1.Location = New System.Drawing.Point(310, 122)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 27)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Eliminar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BEliminar.Enabled = False
+        Me.BEliminar.Location = New System.Drawing.Point(310, 122)
+        Me.BEliminar.Name = "BEliminar"
+        Me.BEliminar.Size = New System.Drawing.Size(90, 27)
+        Me.BEliminar.TabIndex = 15
+        Me.BEliminar.Text = "Eliminar"
+        Me.BEliminar.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -80,14 +82,14 @@ Partial Class DepartamentoEliminar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(418, 162)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CDepartamento)
+        Me.Controls.Add(Me.BCancelar)
+        Me.Controls.Add(Me.BEliminar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DepartamentoEliminar"
@@ -97,9 +99,9 @@ Partial Class DepartamentoEliminar
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents CDepartamento As System.Windows.Forms.ComboBox
+    Friend WithEvents BCancelar As System.Windows.Forms.Button
+    Friend WithEvents BEliminar As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
